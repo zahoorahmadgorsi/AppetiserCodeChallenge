@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="MovieCell" customModule="AppetiserCodeChallenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="445" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lSb-nR-9kW">
+                    <rect key="frame" x="7" y="7" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="Rjx-Dd-Xij"/>
+                        <constraint firstAttribute="width" secondItem="lSb-nR-9kW" secondAttribute="height" multiplier="1:1" id="kJS-3o-U49"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="left" axis="vertical" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="EBg-VF-Yem">
+                    <rect key="frame" x="82" y="10" width="363" height="41.666666666666664"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNo-HW-oJK">
+                            <rect key="frame" x="0.0" y="0.0" width="363" height="14.333333333333334"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiZ-IS-4FE">
+                            <rect key="frame" x="0.0" y="18.333333333333332" width="363" height="9.6666666666666679"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdb-Dk-cCF">
+                            <rect key="frame" x="0.0" y="32" width="363" height="9.6666666666666643"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <accessibility key="accessibilityConfiguration" identifier="MovieCell"/>
+            <constraints>
+                <constraint firstItem="EBg-VF-Yem" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="76R-ai-WJf"/>
+                <constraint firstAttribute="trailing" secondItem="EBg-VF-Yem" secondAttribute="trailing" id="DoD-9y-ul4"/>
+                <constraint firstItem="EBg-VF-Yem" firstAttribute="leading" secondItem="lSb-nR-9kW" secondAttribute="trailing" constant="5" id="dOg-Sg-zDx"/>
+                <constraint firstItem="lSb-nR-9kW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="lpZ-uk-Hsq"/>
+                <constraint firstItem="lSb-nR-9kW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="7" id="t0T-l5-9S2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="lSb-nR-9kW" id="Rtu-dI-s5f"/>
+                <outlet property="lblGenre" destination="eiZ-IS-4FE" id="rhL-sb-ye0"/>
+                <outlet property="lblPrice" destination="Gdb-Dk-cCF" id="5mH-Mg-OeZ"/>
+                <outlet property="lblTitle" destination="rNo-HW-oJK" id="NUa-DF-E9U"/>
+            </connections>
+            <point key="canvasLocation" x="561.06870229007632" y="-362.67605633802816"/>
+        </view>
+    </objects>
+</document>

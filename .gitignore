@@ -1,0 +1,23 @@
+# User-specific files
+*.swp
+*.xcodeproj/project.xcworkspace/
+
+# Derived data
+DerivedData/
+
+# Build artifacts
+build/
+*.xcuserstate
+
+# Ignore xcuserdata (Xcode workspace data)
+*.xcuserdatad/
+
+# Swift Package Manager (if applicable)
+.swiftpm/
+
+# Do not ignore the Pods directory
+!Pods/
+
+# Ignore CocoaPods' generated workspace file if you don't want it tracked
+# Podfile.lock (Optional, you can choose to ignore it if you don't want to commit it)
+Podfile.lock
