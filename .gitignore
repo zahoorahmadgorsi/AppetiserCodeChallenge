@@ -20,4 +20,4 @@ build/
 
 # Ignore CocoaPods' generated workspace file if you don't want it tracked
 # Podfile.lock (Optional, you can choose to ignore it if you don't want to commit it)
-Podfile.lock
+#Podfile.lock
